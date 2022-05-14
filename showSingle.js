@@ -3,7 +3,7 @@ const panels = document.querySelectorAll(".panel");
 function toggleOpen(e) {
   let item = document.querySelector(".open");
 
-  // remove all classes with .open
+  // remove all .open classes from elements
   if (item !== null) {
     item.classList.remove("open");
   }
