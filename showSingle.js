@@ -12,6 +12,12 @@ function toggleOpen(e) {
   if (!e.currentTarget.classList.contains("open")) {
     this.classList.add("open");
   }
+  
+  // remove the current .open class if we click again on
+  // the current .open element
+  if (e.currentTarget.classList.contains("open-active")) {
+    this.classList.remove("open");
+  }
   return;
 }
 
